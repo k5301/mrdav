@@ -1,0 +1,302 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MR DAV Institute Of Management Studies (Approved by A.I.C.T.E, GOVT. of India & Affiliated to M.D.U, Rohtak)</title>
+
+  <link rel="icon" href="StaticImages/logo-img.jpg" type="image/x-icon">
+<!-- Stylesheet -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/reponsive.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" media="screen" />
+<!-- Javascript -->
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/ddsmoothmenu.js" type="text/javascript"></script>
+<script src="js/contentslider.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jcarousellite_1.0.1.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.1.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/DIN_500.font.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/tabs.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="bg" style="width:100%;box-sizing:border-box;overflow:hidden">
+
+
+    <!-- Wapper Sec -->
+		 <!-- masterhead -->
+        
+        <div class="hideScrollbar mainheader">
+			
+            <div id="masterhead" class="hideScrollbar" style="width:100vw;box-sizing:border-box;padding-right:10px;">
+				<!-- Logo -->
+                <div class="hideScrollbar" style="width:100vw;overflow-x:scroll;overflow-y:auto">	
+                    <div class="mainheaderTop">
+                    <div class="logo"><a href="index.aspx"><img src="images/logo.png" alt="" /></a></div>
+                
+                	<%--<div class="logo"><a href="index.aspx"><img src="StaticImages/logo-img1.jpg" alt="" /></a></div>--%>
+                	<!-- masterhead Right Section -->
+						<div class="topright_sec forMarginRight">
+                    		<!-- top navigation -->
+                    			<div class="topnavigation">
+                               		<ul>
+                                  		<li class="first">&nbsp;</li>
+                                    	<li><a href="AdmNews.aspx">News</a></li>
+                                    	<li><a href="AdmEvents.aspx">Events</a></li>
+                                    	<li><a href="AdmNotice.aspx">Notice</a></li>
+                                        <li><a href="AdmResults.aspx">Results</a></li>
+                                    	<li><a href="AdmDownload.aspx">Downloads</a></li>
+                                    	<li><a href="AdmDocuments.aspx">Application Form</a></li>
+                                    	<li><a class="nobg" href="AdmGallery.aspx">Gallery</a></li>
+                                        <%--<li><a class="nobg" href="#"><img src="images/rss.gif"  alt="" /></a></li>--%>
+                                    	<li class="last">&nbsp;</li>
+                                    </ul>
+                                </div>
+                                <div class="clear"></div>
+                    			<!-- top search -->
+                                	<div class="top_search">
+                                    	<%--<div class="advance_search"><a href="#">Advance Option</a></div>--%>
+                                        <ul style="float:right;width:auto">
+                                        	<li><a style="width:auto;float:right;padding:6px 10px;font-size:13px;background-color:#89ab20;color:white;text-decoration:none;margin-right:3px;margin-top:5px" onclick="return confirm('Are You Sure?')" href="index.aspx">LogOut</a></li>
+                                       </ul>
+                                    </div>
+                         	<div class="clear"> </div>       	
+                    	</div>
+                 </div>
+
+                </div>   
+                <div class="clear"></div>
+                    	  <!-- Navigation -->
+                <div id="divNav1" class="navigation" style="width:auto">
+                    <div id="smoothmenu1" class="ddsmoothmenu" style="width:100%">
+                                  	  
+                        <ul style="width:1300px;">
+                            <li class="first"><a onclick="return confirm('Are You Sure To LogOut?')" class="selected" href="index.aspx">Home</a></li>
+                                          <li><a href="AdmNews.aspx">Update News</a>
+                                              <ul>
+                                                <li><a href="AdmEvents.aspx">Update Events</a></li>
+                                                  <li><a href="AdmNotice.aspx">Update Notice</a></li>
+                                                <li></li>
+                                              </ul>			
+                                          
+                                          </li>
+                                                
+                                            <li><a href="AdmGallery.aspx">Update Photos</a></li>
+                                          <li><a href="AdmBanner.aspx">Update Banner</a> 
+                                              <!-- Sub Menu level 1 -->    
+                                            <ul>
+                                                <li><a href="AdmPerson.aspx">Update Person's</a></li>
+                                                  <li><a href="AdmFacilities.aspx">Update Facilities</a></li>
+                                                <li></li>
+                                              </ul>			
+                                          </li>
+                                          <li><a href="AdmFaculty.aspx">Update Faculty</a> </li>
+                                          <li><a href="AdmDownload.aspx">Update Downloads</a></li>
+                                          <li><a href="AdmResults.aspx">Update Results</a> </li>
+                                          <li><a href="AdmDocuments.aspx">Update Documents</a> </li>
+                                          <li><a href="AdmTopperStudents.aspx">Topper Students</a><ul>
+                                          <li><a href="AdmAlmuni.aspx" class="last">Almuni</a></li></ul> </li>
+                                          <li style="float:right" class="last"><a href="#">Pages</a>
+                                               <ul>
+                                                    <li><a onclick="return confirm('Are You Sure To LogOut?')" href="index.aspx">Home</a></li>
+                                                    <li><a href="AdmNews.aspx">News</a></li>
+                                                    <li><a href="AdmEvents.aspx">Events</a>
+                                               		<li><a href="AdmNotice.aspx">Notice</a></li>
+                                                    <li><a href="AdmGallery.aspx">Gallery</a> </li>
+                                                    <li><a href="AdmBanner.aspx">Banner</a></li>
+                                                    <li><a href="AdmPerson.aspx">Person's</a></li>
+                                               		<li><a href="AdmFacilities.aspx">Facilities</a></li>
+                                               		<li><a href="AdmFaculty.aspx">Faculty</a></li>
+                                               		<li><a href="AdmDownload.aspx">Downloads</a></li>   		
+                                               		<li><a href="AdmResults.aspx">Results</a></li>
+                                                    <li><a href="AdmDocuments.aspx">Documents</a></li>
+                                                    <li><a href="AdmTopperStudents.aspx">TopperStudents</a></li>
+                                                    <li><a href="AdmAlmuni.aspx">Almuni</a> </li>
+                                                   <%--<li><a href="contactUs.aspx">ContactUs</a></li>--%>
+                                               		<%--<li><a href="static.html">Static</a></li>--%> 		
+                                               		
+                                               </ul>		
+                                          </li>
+                        </ul>				
+                                      
+                              
+                    </div>
+            <!-- navigation ends -->       		                            
+             	    <div class="clear"></div>	
+                </div>  
+                
+                <div id="divNav2" class="navigation" style="width:100vw">
+                    <div id="smoothmenu1" class="ddsmoothmenu" style="width:100vw">
+                        <div class="hideScrollbar" style="width:100vw;overflow-x:scroll;">
+                        <ul style="width:1300px;">
+                            <li class="first"><a onclick="return confirm('Are You Sure To LogOut?')" class="selected" href="index.aspx">Home</a></li>
+                            <li><a href="AdmNews.aspx">Update News</a></li>
+                            <li><a href="AdmGallery.aspx">Update Photos</a></li>
+                            <li><a href="AdmBanner.aspx">Update Banner</a></li>
+                            <li><a href="AdmFaculty.aspx">Update Faculty</a> </li>
+                            <li><a href="AdmDownload.aspx">Update Downloads</a></li>
+                            <li><a href="AdmResults.aspx">Update Results</a> </li>
+                            <li><a href="AdmDocuments.aspx">Update Documents</a> </li>
+                            <li><a href="AdmTopperStudents.aspx">Topper Students</a></li>
+                            <li><a href="AdmAlmuni.aspx" class="last">Almuni</a></li>
+                                          
+                        </ul>				
+                        </div>
+                    </div>
+            <!-- navigation ends -->       		                            
+        <div class="clear"></div>	
+    </div>  
+		    </div>
+        </div>
+            
+		    
+            <!-- Content Seciton -->
+        
+        <%--<div style="width:960px;margin:0 auto">
+        	<div id="content_section" style="width:100vw;overflow:hidden;padding-left:10px">
+        		<!-- News Updates -->
+            		<div class="news_updates">
+                  <div style="float:left;" class="col-md-2">
+            			   	<a href="news.aspx"><span class="news_update">News Updates</span></a></div>
+                          <div style="float:left; width:90%;"  class="col-md-10">
+                          <marquee>
+                              <asp:Repeater ID="rptNews" runat="server">
+                                  <ItemTemplate>
+                                      <em>
+                                          <asp:Label ID="lblTime" runat="server" Text='<%#Bind("Date") %>'></asp:Label> :
+                                       </em>
+                                        <asp:Label style="color:blue" ID="lblDescription" runat="server" Text='<%#Bind("Description") %>'></asp:Label>
+                                    &nbsp;
+                                  </ItemTemplate>
+                              </asp:Repeater>
+                           	
+                        </marquee>
+                     </div>
+                    </div>
+                </div>
+                    <div class="clear"></div>
+        </div>--%>
+        <div class="hideScrollbar" style="width:100vw;overflow:scroll">
+        
+            <div class="allContent" style="width:960px;margin:0 auto">
+		<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>		 
+                <div class="clear"></div>
+			<!-- Slder -->	
+         </div>   	
+		<div class="clear"></div>
+	    </div>
+        
+
+
+  <div class="hideScrollbar" style="width:100vw;overflow:scroll">      
+        <!-- Footer Section -->
+<div id="bottom_seciton" class="botmWidth">
+	<%--<div id="footer" style="width:1300px">
+		<!--Find your way -->
+            <div style="width:170px;float:left;box-sizing:border-box">
+            <img alt="" src="StaticImages/aicte12.png" />
+            </div>	
+        	<div class="find_your_way">
+				<h5>Find your Way</h5>        
+        		<ul>
+        			<li><a href="index.aspx">Home</a></li>
+        			<li><a href="news.aspx">News</a></li>
+        			<li><a href="gallery.aspx">Gallery</a></li>
+        			<li><a href="aboutUs.aspx">About Us</a></li>
+                	<li><a href="Facilities.aspx">Facilities</a></li>
+        		</ul>
+			</div>    
+    	<!-- Help and Support -->	
+        	<div class="help_support">
+				<h5>Help &amp;Support</h5>        
+        		<ul>
+        			<li><a href="#">Academic Calendar</a></li>
+        			<li><a href="#">Bookstore</a></li>
+        			<li><a href="#">Courses</a></li>
+                	<li><a href="#">Our Help Desk</a></li>
+        		</ul>
+			</div>    
+    	<!-- Quick Links -->	
+        	<div class="quick_links">
+				<h5>Quick Links</h5>        
+        		<ul>
+        			<li><a target="_blank" href="Documents/Application form.pdf">Application Form</a></li>
+        			<li><a target="_blank" href="Documents/Prospectus.pdf">Prospectus</a></li>
+        			<li><a target="_blank" href="https://goo.gl/maps/AbCSvBjwDtFgSE3p8">Directions</a></li>
+        			<li><a href="tnp.aspx">Training &amp; Placement</a></li>
+        			<li><a href="news.aspx">News</a></li>
+                	<li><a href="result.aspx">Results</a></li>
+        		</ul>
+			</div>    
+    	<!-- Addmission -->	
+        	<div class="Addmissoin">
+				<h5>Addmission</h5>        
+        		<ul>
+        			<li><a href="admission.aspx">Procedure</a></li>
+        			<li><a href="admission.aspx">Eligibility Criteria for MBA</a></li>
+        			<li><a href="admission.aspx">Eligibility Criteria for MCA</a></li>
+        			<li><a href="admission.aspx">Eligibility Criteria for BBA</a></li>
+        			
+        		</ul>
+			</div>    
+    	<!-- Contact Us -->	
+        	<div class="contact_us">
+				<h5>Contact Us</h5>        
+        		<ul>
+        			<li class="telephone_no">+91-8950066210</li>
+        			<li  class="mailing_address">
+                    	5th KM Stone, Sonepat Road Rohtak-124023
+                    </li>
+        			<li class="email_address"><a href="#">mrdavims@gmail.com</a></li>
+        			<li class="googlemaps"><a target="_blank" href="https://goo.gl/maps/AbCSvBjwDtFgSE3p8">Google Maps</a></li>
+        		</ul>
+			</div>    
+   		    
+        <div style="width:170px;float:left;box-sizing:border-box">
+            <br /><br />
+            <img alt="" src="StaticImages/mdu.png" />
+            </div>
+        
+        <div class="clear"></div>     
+    </div>--%>
+</div></div>
+<!-- Bototm seciton  style="background-color:#ffc"s-->
+	<div id="bottom_Section">
+	<!-- page bottm -->
+       	<div id="pagebottom" style="text-align:center">
+    		<!-- copyright -->
+            <div class="copyright" style="margin-left:10px">&copy; 2011 <a href="#">College Site</a> All Rights Reserved</div>
+            	
+               <a href="#" class="top">Top</a>
+    			<!-- Social Networks -->
+               
+            	<div class="socail_networks" style="float:none;text-align:center;margin-left:10px">
+        			<ul>
+            			<li class="servcies">Follows us our servcies</li>
+            			<li><a href="#"><img src="images/facebook_icon.gif"  alt="" /> </a></li>
+                		<li><a href="#"><img src="images/linkedin_icon.gif"  alt="" /> </a></li>
+                		<li><a href="#"><img src="images/twitter_icon.gif"  alt="" /> </a></li>
+                		<li><a href="#"><img src="images/rssfeed_icon.gif"  alt="" /> </a></li>
+                		<li><a href="#"><img src="images/social_icon.gif"  alt="" /> </a></li>
+               		</ul>
+        		</div>
+             <div class="clear"></div>     	
+    	</div>
+	</div>
+    </div>
+    </form>
+</body>
+</html>
